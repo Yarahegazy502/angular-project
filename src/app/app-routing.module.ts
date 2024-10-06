@@ -17,6 +17,7 @@ const routes: Routes = [
   { path: 'products', component: ProductsComponent },
   { path: 'product-details/:id/:title', component: ProductDetailsComponent },
   { path: 'posts', component: PostsComponent },
+
   { path: 'parent', component: ParentComponent },
   { path: '**', component: Error404Component },
 ];
