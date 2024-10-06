@@ -1,0 +1,13 @@
+<div class="border p-3 rounded-2">
+  <!-- <ng-content select="h3,img"></ng-content> -->
+  <ng-content select="h3"></ng-content>
+  <ng-content select="img"></ng-content>
+  <p>child works!</p>
+  message from parent : {{message}}
+
+  <ng-content select=".desc"></ng-content>
+  <div class="mt-3 d-flex justify-content-end">
+    <button class="btn btn-primary" (click)="getChildId()">Get Child Id</button>
+  </div>
+
+</div>

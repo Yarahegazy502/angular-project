@@ -1,0 +1,19 @@
+<app-navbar (handleClick)="changeComp($event)"></app-navbar>
+<div id="main">
+  <!-- <ng-container *ngIf="compName=='products'">
+    <products></products>
+  </ng-container>
+  <ng-container *ngIf="compName=='home'">
+    <app-home></app-home>
+  </ng-container>
+  <ng-container *ngIf="compName=='posts'">
+    <app-posts></app-posts>
+  </ng-container>
+  <ng-container *ngIf="compName=='parent'">
+    <app-parent></app-parent>
+  </ng-container> -->
+
+  <router-outlet></router-outlet>
+
+</div>
+<structure-footer></structure-footer>

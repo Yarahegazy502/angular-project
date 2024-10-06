@@ -1,0 +1,16 @@
+<div class="container my-3">
+  <!-- <app-product-item [prd]="products[1]"></app-product-item>
+  <app-product-item [prd]="products[2]"></app-product-item>
+  <app-product-item [prd]="products[3]"></app-product-item>
+  <app-product-item [prd]="products[4]"></app-product-item>
+  <app-product-item [prd]="products[5]"></app-product-item>
+  <app-product-item [prd]="products[6]"></app-product-item> -->
+  <div class="row gy-4">
+    <ng-container *ngFor="let item of products">
+      <div class="col-lg-4">
+        <app-product-item [prd]="item" (clickHandler)="getDetails($event)"></app-product-item>
+      </div>
+    </ng-container>
+  </div>
+
+</div>

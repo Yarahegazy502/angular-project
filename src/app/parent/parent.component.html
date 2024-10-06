@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Parent</h1>
+  <input type="text" [(ngModel)]="msg">
+  <p #message>{{msg}}</p>
+  <app-child #child [message]="msg" (clickHandler)="getId($event)">
+    <!-- <img src="https://img.freepik.com/free-photo/hands-created-heart-shape_23-2150703756.jpg?size=626&ext=jpg"
+      alt="image" width="200" height="200">
+    <h3>Title</h3>
+    <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis pariatur ullam veritatis quasi harum
+      quam,
+      voluptates reiciendis ad suscipit accusantium adipisci molestias sapiente fuga error odit eveniet voluptate fugit
+      illo.</p>
+    <p>lorem2</p> -->
+  </app-child>
+
+  <!-- <app-child #child [message]="msg" (clickHandler)="getId($event)">
+  </app-child>
+
+  <app-child #child [message]="msg" (clickHandler)="getId($event)">
+  </app-child>
+  <app-child #child [message]="msg" (clickHandler)="getId($event)">
+  </app-child> -->
+
+</div>

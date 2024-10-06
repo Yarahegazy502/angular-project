@@ -1,0 +1,30 @@
+<div class="container py-4">
+  <!-- <ng-container *ngIf="posts[0] as post">
+    <div class="card p-3">
+      <h4>{{post.title}}</h4>
+      <p>{{post.body}}</p>
+    </div>
+  </ng-container> -->
+
+
+  <ng-container *ngIf="posts.length>0;else noPosts">
+    <ng-container *ngFor="let item of posts">
+      <div class="mb-4">
+        <!-- <app-post-item [post]="item" (handelDetails)="getPostDetails($event)"></app-post-item> -->
+        <app-post-item [post]="item"></app-post-item>
+      </div>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #noPosts>
+    <div class="row justify-content-center">
+      <div class="col-lg-4 col-md-8 col-10">
+        <img
+          src="https://img.freepik.com/premium-vector/search-found-no-data-found-data-empty_1249780-8.jpg?ga=GA1.2.584415855.1675101629&semt=ais_hybrid"
+          alt="" class="w-100">
+        <h4 class="text-center">No Posts</h4>
+      </div>
+    </div>
+  </ng-template>
+
+</div>
