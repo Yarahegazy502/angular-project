@@ -9,12 +9,13 @@
 
   <ng-container *ngIf="posts.length>0;else noPosts">
     <ng-container *ngFor="let item of posts">
-      <div class="mb-4">
+      <div class="mb-4 postColor">
         <!-- <app-post-item [post]="item" (handelDetails)="getPostDetails($event)"></app-post-item> -->
         <app-post-item [post]="item"></app-post-item>
       </div>
     </ng-container>
   </ng-container>
+
 
   <ng-template #noPosts>
     <div class="row justify-content-center">
