@@ -7,11 +7,10 @@ binding
 -->
 
 <div class="container">
-<<<<<<< HEAD
-=======
+
   <h1>Welcome to angular</h1>
   <h3>Welcome to angular</h3>
->>>>>>> 42d00b9d63e6d27d59ace50255d89c2fc4ca1cc8
+
   <img [src]="imageSrc" alt="" srcset="">
   <h1> {{message}}</h1>
 </div>
@@ -24,6 +23,18 @@ binding
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit magni voluptate, eum tempora impedit cupiditate
   saepe, dignissimos praesentium asperiores fugit enim qui cum debitis optio nisi ratione error nihil quam.</p>
 
+
+  <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate
+    explicabo repellat animi eos voluptas est possimus nostrum, voluptatum
+    maxime fugiat laborum dolores ipsum, aut praesentium. Dolorem animi
+    voluptate quasi architecto.
+  </p>
+  <!-- <button class="btn btn-primary" [routerLink]="['/products']">Go To Products</button> -->
+  <button class="btn btn-primary" (click)="goToProducts()">Go Products</button>
+  <button class="btn btn-primary" (click)="goToProducts()">Go Products</button>
+</div>
+
 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate explicabo repellat animi eos voluptas est
   possimus nostrum, voluptatum maxime fugiat laborum dolores ipsum, aut praesentium. Dolorem animi voluptate quasi
   architecto.</p>
@@ -32,3 +43,4 @@ binding
 <h2>test</h2>
 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur delectus assumenda eos quasi, tempora ducimus
   accusamus perferendis cum dolorem a numquam, in ipsam consequatur eaque nobis aut. Est, asperiores similique!</p>
+
